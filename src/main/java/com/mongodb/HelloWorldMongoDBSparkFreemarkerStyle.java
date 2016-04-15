@@ -24,9 +24,9 @@ public class HelloWorldMongoDBSparkFreemarkerStyle {
     public static void main(String[] args) throws IOException {
         final Configuration cfg = new Configuration();
 
-        // cfg.setClassForTemplateLoading(HelloWorldMongoDBSparkFreemarkerStyle.class, "/freemarker");
+        cfg.setClassForTemplateLoading(HelloWorldMongoDBSparkFreemarkerStyle.class, "/freemarker");
 
-        cfg.setDirectoryForTemplateLoading(new File("/home/rod/mongo-projects/M101J/src/main/java/freemarker"));
+//        cfg.setDirectoryForTemplateLoading(new File("/home/rod/mongo-projects/M101J/src/main/java/freemarker"));
 
         MongoClient client = new MongoClient();
         MongoDatabase db = client.getDatabase("course");
